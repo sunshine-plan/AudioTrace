@@ -1,0 +1,4 @@
+// Set a unique reverse-domain identifier and your own Apple development Team.
+AUDIOTRACE_BUNDLE_ID = com.example.AudioTrace
+AUDIOTRACE_APP_GROUP = group.$(AUDIOTRACE_BUNDLE_ID)
+AUDIOTRACE_TEAM =

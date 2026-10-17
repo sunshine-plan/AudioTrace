@@ -1,0 +1,23 @@
+# Local build and capture data
+work/
+outputs/
+DerivedData/
+build/
+xcuserdata/
+*.xcuserstate
+.DS_Store
+# Signing material and credentials
+*.mobileprovision
+*.provisionprofile
+*.p12
+*.pfx
+*.pem
+*.key
+.env
+.env.*
+# Never commit recordings or exported diagnostic sessions
+session_*/
+*.wav
+*.mp4
+*.mov
+*.zip

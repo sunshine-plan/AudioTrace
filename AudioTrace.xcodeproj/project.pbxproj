@@ -1,0 +1,658 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		108E9253EB014B9B48179D8C /* AudioTrace/IntegrityChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FB5FE364CF0DF77080E908 /* AudioTrace/IntegrityChecker.swift */; };
+		16A4FEFB912A076B2E4FBF80 /* Shared/Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA194DFEE3F612869448E358 /* Shared/Models.swift */; };
+		23CDB9A3C2B3F22FC9817BD9 /* Shared/CaptureEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FDC9CDFA5C7F9EE4E3B5832 /* Shared/CaptureEngine.swift */; };
+		265BC4FD28C528304F1AC67C /* AudioTraceBroadcast.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 78E7D2E4DBC136C6E993F86E /* AudioTraceBroadcast.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2BCDCD559D86D3BA6DF76E32 /* Shared/VideoCapturePipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3D1CD4EEE8215042A3F2E2 /* Shared/VideoCapturePipeline.swift */; };
+		30506D0EA3A6F3D290F592EB /* BroadcastExtension/SampleHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4754D3BB670C656A154FEF /* BroadcastExtension/SampleHandler.swift */; };
+		3E0BFE2610A674CEF030BF7A /* AudioTrace/Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E536C7CBEE28ED8AF4F7D6E /* AudioTrace/Assets.xcassets */; };
+		5E2D32D904F41C107ADF93CF /* AudioTrace/CaptureModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34017AA9B10354CDA714B6F4 /* AudioTrace/CaptureModel.swift */; };
+		5E2E9326BEF1CDE669ADC5B5 /* Shared/CaptureDiagnostics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337930303519C06AF99FDD6C /* Shared/CaptureDiagnostics.swift */; };
+		6863BAD1932B1C3850F15587 /* Configuration/PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 3571D517BB2E1F588BFD80D5 /* Configuration/PrivacyInfo.xcprivacy */; };
+		758743CE73C6D49F55783F5A /* Shared/CaptureDiagnostics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337930303519C06AF99FDD6C /* Shared/CaptureDiagnostics.swift */; };
+		75E0F309521252B61EA28A49 /* Shared/AudioCapturePipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = D532DB8C58B4243E04721968 /* Shared/AudioCapturePipeline.swift */; };
+		7AF0037262F6A52033CA926D /* Shared/Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA194DFEE3F612869448E358 /* Shared/Models.swift */; };
+		88EBB1C3E5E74363A01ED324 /* Shared/SessionStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8D6F29A70E63B35DEBEB9A /* Shared/SessionStorage.swift */; };
+		91848839AE4C0DFBEBE50BEC /* Shared/SessionStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8D6F29A70E63B35DEBEB9A /* Shared/SessionStorage.swift */; };
+		976F3123A5CAA0BA7271161A /* AudioTrace/SessionExport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590A4930ED37FC2423A42101 /* AudioTrace/SessionExport.swift */; };
+		A065688B3DEA13A21B99869A /* Configuration/PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 3571D517BB2E1F588BFD80D5 /* Configuration/PrivacyInfo.xcprivacy */; };
+		A4A99706DD3EDD4A800D1E10 /* AudioTrace/ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DC76F30B74AC17D8E34130 /* AudioTrace/ContentView.swift */; };
+		A97C694BEA3AED852DEF3104 /* Shared/AudioCapturePipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = D532DB8C58B4243E04721968 /* Shared/AudioCapturePipeline.swift */; };
+		B5F19298FB74E2D098099422 /* Shared/CaptureEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FDC9CDFA5C7F9EE4E3B5832 /* Shared/CaptureEngine.swift */; };
+		BBDFCEDD39F7031329C2D582 /* AudioTrace/AudioTraceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1797946BF9A82E1E25EE5C /* AudioTrace/AudioTraceApp.swift */; };
+		EB27506360AD3BA1EAB72121 /* Shared/VideoCapturePipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3D1CD4EEE8215042A3F2E2 /* Shared/VideoCapturePipeline.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D799BAE6088A90139B415FCC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 98F54143AB4E86B28C3AFEE0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C3FDA28453C42FBA446FDCE;
+			remoteInfo = AudioTraceBroadcast;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CFFF27C96089B93150F3553B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				265BC4FD28C528304F1AC67C /* AudioTraceBroadcast.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1EA97CF509B29FF20C40AFA7 /* Configuration/Identifiers.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text; path = Configuration/Identifiers.xcconfig; sourceTree = "<group>"; };
+		20A775F93AF2BC57D48C52CE /* Configuration/Shared.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text; path = Configuration/Shared.entitlements; sourceTree = "<group>"; };
+		2E536C7CBEE28ED8AF4F7D6E /* AudioTrace/Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AudioTrace/Assets.xcassets; sourceTree = "<group>"; };
+		337930303519C06AF99FDD6C /* Shared/CaptureDiagnostics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shared/CaptureDiagnostics.swift; sourceTree = "<group>"; };
+		34017AA9B10354CDA714B6F4 /* AudioTrace/CaptureModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioTrace/CaptureModel.swift; sourceTree = "<group>"; };
+		3571D517BB2E1F588BFD80D5 /* Configuration/PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text; path = Configuration/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		4D96FBC9E5DC74253CAF8D4B /* Configuration/Extension-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Configuration/Extension-Info.plist"; sourceTree = "<group>"; };
+		590A4930ED37FC2423A42101 /* AudioTrace/SessionExport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioTrace/SessionExport.swift; sourceTree = "<group>"; };
+		6B1797946BF9A82E1E25EE5C /* AudioTrace/AudioTraceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioTrace/AudioTraceApp.swift; sourceTree = "<group>"; };
+		6B8D6F29A70E63B35DEBEB9A /* Shared/SessionStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shared/SessionStorage.swift; sourceTree = "<group>"; };
+		6FDC9CDFA5C7F9EE4E3B5832 /* Shared/CaptureEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shared/CaptureEngine.swift; sourceTree = "<group>"; };
+		72638434B198B71E5CD8C0C5 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		78E7D2E4DBC136C6E993F86E /* AudioTraceBroadcast.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; path = AudioTraceBroadcast.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A1270EC8E8FBAEF2E2FF967 /* Configuration/Personal.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text; path = Configuration/Personal.entitlements; sourceTree = "<group>"; };
+		92D4F8EAA80C9DE2CA935320 /* Configuration/App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Configuration/App-Info.plist"; sourceTree = "<group>"; };
+		9A4754D3BB670C656A154FEF /* BroadcastExtension/SampleHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BroadcastExtension/SampleHandler.swift; sourceTree = "<group>"; };
+		A123930A0FF69EECFCD0D5DB /* KNOWN_LIMITATIONS.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = KNOWN_LIMITATIONS.md; sourceTree = "<group>"; };
+		B5FB5FE364CF0DF77080E908 /* AudioTrace/IntegrityChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioTrace/IntegrityChecker.swift; sourceTree = "<group>"; };
+		B6CDB6E5D160E013280D3C68 /* AudioTrace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = AudioTrace.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9260C3155D51556A60A80F9 /* TEST_PLAN.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = TEST_PLAN.md; sourceTree = "<group>"; };
+		CA194DFEE3F612869448E358 /* Shared/Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shared/Models.swift; sourceTree = "<group>"; };
+		D532DB8C58B4243E04721968 /* Shared/AudioCapturePipeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shared/AudioCapturePipeline.swift; sourceTree = "<group>"; };
+		E7DC76F30B74AC17D8E34130 /* AudioTrace/ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioTrace/ContentView.swift; sourceTree = "<group>"; };
+		ED3D1CD4EEE8215042A3F2E2 /* Shared/VideoCapturePipeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shared/VideoCapturePipeline.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A55BB881FAD084C918DA848C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C19A4328C9961E8F8A7CF4CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B28B7AF69320201D1CF206EB = {
+			isa = PBXGroup;
+			children = (
+				D532DB8C58B4243E04721968 /* Shared/AudioCapturePipeline.swift */,
+				337930303519C06AF99FDD6C /* Shared/CaptureDiagnostics.swift */,
+				6FDC9CDFA5C7F9EE4E3B5832 /* Shared/CaptureEngine.swift */,
+				CA194DFEE3F612869448E358 /* Shared/Models.swift */,
+				6B8D6F29A70E63B35DEBEB9A /* Shared/SessionStorage.swift */,
+				ED3D1CD4EEE8215042A3F2E2 /* Shared/VideoCapturePipeline.swift */,
+				6B1797946BF9A82E1E25EE5C /* AudioTrace/AudioTraceApp.swift */,
+				34017AA9B10354CDA714B6F4 /* AudioTrace/CaptureModel.swift */,
+				E7DC76F30B74AC17D8E34130 /* AudioTrace/ContentView.swift */,
+				B5FB5FE364CF0DF77080E908 /* AudioTrace/IntegrityChecker.swift */,
+				590A4930ED37FC2423A42101 /* AudioTrace/SessionExport.swift */,
+				9A4754D3BB670C656A154FEF /* BroadcastExtension/SampleHandler.swift */,
+				92D4F8EAA80C9DE2CA935320 /* Configuration/App-Info.plist */,
+				4D96FBC9E5DC74253CAF8D4B /* Configuration/Extension-Info.plist */,
+				20A775F93AF2BC57D48C52CE /* Configuration/Shared.entitlements */,
+				8A1270EC8E8FBAEF2E2FF967 /* Configuration/Personal.entitlements */,
+				1EA97CF509B29FF20C40AFA7 /* Configuration/Identifiers.xcconfig */,
+				3571D517BB2E1F588BFD80D5 /* Configuration/PrivacyInfo.xcprivacy */,
+				2E536C7CBEE28ED8AF4F7D6E /* AudioTrace/Assets.xcassets */,
+				72638434B198B71E5CD8C0C5 /* README.md */,
+				C9260C3155D51556A60A80F9 /* TEST_PLAN.md */,
+				A123930A0FF69EECFCD0D5DB /* KNOWN_LIMITATIONS.md */,
+				FBDC4F23F93125BBEEAE800C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FBDC4F23F93125BBEEAE800C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B6CDB6E5D160E013280D3C68 /* AudioTrace.app */,
+				78E7D2E4DBC136C6E993F86E /* AudioTraceBroadcast.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		29C7B681C8D62CBAC94D51C0 /* AudioTrace */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BFD9FB0C1AF70F2030A6F98 /* Build configuration list for PBXNativeTarget "AudioTrace" */;
+			buildPhases = (
+				D10ECEDA0FB53BA093BEC557 /* Sources */,
+				C19A4328C9961E8F8A7CF4CD /* Frameworks */,
+				C84B5C31679C986BFD935BC6 /* Resources */,
+				CFFF27C96089B93150F3553B /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DE58E2B17C19600779694943 /* PBXTargetDependency */,
+			);
+			name = AudioTrace;
+			productName = AudioTrace;
+			productReference = B6CDB6E5D160E013280D3C68 /* AudioTrace.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8C3FDA28453C42FBA446FDCE /* AudioTraceBroadcast */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CCCFC6BB1C66D1DE47B57A7 /* Build configuration list for PBXNativeTarget "AudioTraceBroadcast" */;
+			buildPhases = (
+				DCE3E12FD461401A4F56ABC0 /* Sources */,
+				A55BB881FAD084C918DA848C /* Frameworks */,
+				C8682335B0F63D1815E96008 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AudioTraceBroadcast;
+			productName = AudioTraceBroadcast;
+			productReference = 78E7D2E4DBC136C6E993F86E /* AudioTraceBroadcast.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		98F54143AB4E86B28C3AFEE0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastSwiftUpdateCheck = 2620;
+				LastUpgradeCheck = 2620;
+				TargetAttributes = {
+					29C7B681C8D62CBAC94D51C0 = {
+						CreatedOnToolsVersion = 26.2;
+						ProvisioningStyle = Automatic;
+					};
+					8C3FDA28453C42FBA446FDCE = {
+						CreatedOnToolsVersion = 26.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = DEB0744DC7708188060CB52C /* Build configuration list for PBXProject "AudioTrace" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B28B7AF69320201D1CF206EB;
+			productRefGroup = FBDC4F23F93125BBEEAE800C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				29C7B681C8D62CBAC94D51C0 /* AudioTrace */,
+				8C3FDA28453C42FBA446FDCE /* AudioTraceBroadcast */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C84B5C31679C986BFD935BC6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A065688B3DEA13A21B99869A /* Configuration/PrivacyInfo.xcprivacy in Resources */,
+				3E0BFE2610A674CEF030BF7A /* AudioTrace/Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8682335B0F63D1815E96008 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6863BAD1932B1C3850F15587 /* Configuration/PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D10ECEDA0FB53BA093BEC557 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75E0F309521252B61EA28A49 /* Shared/AudioCapturePipeline.swift in Sources */,
+				5E2E9326BEF1CDE669ADC5B5 /* Shared/CaptureDiagnostics.swift in Sources */,
+				23CDB9A3C2B3F22FC9817BD9 /* Shared/CaptureEngine.swift in Sources */,
+				7AF0037262F6A52033CA926D /* Shared/Models.swift in Sources */,
+				88EBB1C3E5E74363A01ED324 /* Shared/SessionStorage.swift in Sources */,
+				EB27506360AD3BA1EAB72121 /* Shared/VideoCapturePipeline.swift in Sources */,
+				BBDFCEDD39F7031329C2D582 /* AudioTrace/AudioTraceApp.swift in Sources */,
+				5E2D32D904F41C107ADF93CF /* AudioTrace/CaptureModel.swift in Sources */,
+				A4A99706DD3EDD4A800D1E10 /* AudioTrace/ContentView.swift in Sources */,
+				108E9253EB014B9B48179D8C /* AudioTrace/IntegrityChecker.swift in Sources */,
+				976F3123A5CAA0BA7271161A /* AudioTrace/SessionExport.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCE3E12FD461401A4F56ABC0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A97C694BEA3AED852DEF3104 /* Shared/AudioCapturePipeline.swift in Sources */,
+				758743CE73C6D49F55783F5A /* Shared/CaptureDiagnostics.swift in Sources */,
+				B5F19298FB74E2D098099422 /* Shared/CaptureEngine.swift in Sources */,
+				16A4FEFB912A076B2E4FBF80 /* Shared/Models.swift in Sources */,
+				91848839AE4C0DFBEBE50BEC /* Shared/SessionStorage.swift in Sources */,
+				2BCDCD559D86D3BA6DF76E32 /* Shared/VideoCapturePipeline.swift in Sources */,
+				30506D0EA3A6F3D290F592EB /* BroadcastExtension/SampleHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DE58E2B17C19600779694943 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8C3FDA28453C42FBA446FDCE /* AudioTraceBroadcast */;
+			targetProxy = D799BAE6088A90139B415FCC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		03FD7327F9CF605CEA3318F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		1256EFF8AE77A6E68DBABFED /* SharedRelease */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1EA97CF509B29FF20C40AFA7 /* Configuration/Identifiers.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				AUDIOTRACE_SHARED_CAPTURE = YES;
+				CODE_SIGN_ENTITLEMENTS = Configuration/Shared.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = "$(AUDIOTRACE_TEAM)";
+				ENABLE_APP_INTENTS_METADATA_GENERATION = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Configuration/Extension-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(AUDIOTRACE_BUNDLE_ID).Broadcast";
+				PRODUCT_NAME = AudioTraceBroadcast;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = SharedRelease;
+		};
+		383E6D4FB63B2E13F9906147 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1EA97CF509B29FF20C40AFA7 /* Configuration/Identifiers.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				AUDIOTRACE_SHARED_CAPTURE = NO;
+				CODE_SIGN_ENTITLEMENTS = Configuration/Personal.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = "$(AUDIOTRACE_TEAM)";
+				ENABLE_APP_INTENTS_METADATA_GENERATION = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Configuration/App-Info.plist";
+				"INFOPLIST_FILE[sdk=iphoneos27*]" = "Configuration/Native-Info.plist";
+				"INFOPLIST_FILE[sdk=iphoneos28*]" = "Configuration/Native-Info.plist";
+				"INFOPLIST_FILE[sdk=iphoneos29*]" = "Configuration/Native-Info.plist";
+				"INFOPLIST_FILE[sdk=iphonesimulator27*]" = "Configuration/Native-Info.plist";
+				"INFOPLIST_FILE[sdk=iphonesimulator28*]" = "Configuration/Native-Info.plist";
+				"INFOPLIST_FILE[sdk=iphonesimulator29*]" = "Configuration/Native-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(AUDIOTRACE_BUNDLE_ID)";
+				PRODUCT_NAME = AudioTrace;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6661CDF525A07D20FFF3098E /* SharedRelease */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1EA97CF509B29FF20C40AFA7 /* Configuration/Identifiers.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				AUDIOTRACE_SHARED_CAPTURE = YES;
+				CODE_SIGN_ENTITLEMENTS = Configuration/Shared.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = "$(AUDIOTRACE_TEAM)";
+				ENABLE_APP_INTENTS_METADATA_GENERATION = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Configuration/App-Info.plist";
+				"INFOPLIST_FILE[sdk=iphoneos27*]" = "Configuration/Native-Info.plist";
+				"INFOPLIST_FILE[sdk=iphoneos28*]" = "Configuration/Native-Info.plist";
+				"INFOPLIST_FILE[sdk=iphoneos29*]" = "Configuration/Native-Info.plist";
+				"INFOPLIST_FILE[sdk=iphonesimulator27*]" = "Configuration/Native-Info.plist";
+				"INFOPLIST_FILE[sdk=iphonesimulator28*]" = "Configuration/Native-Info.plist";
+				"INFOPLIST_FILE[sdk=iphonesimulator29*]" = "Configuration/Native-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(AUDIOTRACE_BUNDLE_ID)";
+				PRODUCT_NAME = AudioTrace;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = SharedRelease;
+		};
+		6A522292BDC8D2848215C5E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1EA97CF509B29FF20C40AFA7 /* Configuration/Identifiers.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				AUDIOTRACE_SHARED_CAPTURE = NO;
+				CODE_SIGN_ENTITLEMENTS = Configuration/Personal.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = "$(AUDIOTRACE_TEAM)";
+				ENABLE_APP_INTENTS_METADATA_GENERATION = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Configuration/App-Info.plist";
+				"INFOPLIST_FILE[sdk=iphoneos27*]" = "Configuration/Native-Info.plist";
+				"INFOPLIST_FILE[sdk=iphoneos28*]" = "Configuration/Native-Info.plist";
+				"INFOPLIST_FILE[sdk=iphoneos29*]" = "Configuration/Native-Info.plist";
+				"INFOPLIST_FILE[sdk=iphonesimulator27*]" = "Configuration/Native-Info.plist";
+				"INFOPLIST_FILE[sdk=iphonesimulator28*]" = "Configuration/Native-Info.plist";
+				"INFOPLIST_FILE[sdk=iphonesimulator29*]" = "Configuration/Native-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(AUDIOTRACE_BUNDLE_ID)";
+				PRODUCT_NAME = AudioTrace;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		776085161C81300BCE6BF557 /* SharedDebug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1EA97CF509B29FF20C40AFA7 /* Configuration/Identifiers.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				AUDIOTRACE_SHARED_CAPTURE = YES;
+				CODE_SIGN_ENTITLEMENTS = Configuration/Shared.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = "$(AUDIOTRACE_TEAM)";
+				ENABLE_APP_INTENTS_METADATA_GENERATION = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Configuration/Extension-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(AUDIOTRACE_BUNDLE_ID).Broadcast";
+				PRODUCT_NAME = AudioTraceBroadcast;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = SharedDebug;
+		};
+		78B108A7C696D9CBD1A8A598 /* SharedRelease */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 5.0;
+			};
+			name = SharedRelease;
+		};
+		C6AF114F756F1F7A228BA4D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1EA97CF509B29FF20C40AFA7 /* Configuration/Identifiers.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				AUDIOTRACE_SHARED_CAPTURE = NO;
+				CODE_SIGN_ENTITLEMENTS = Configuration/Personal.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = "$(AUDIOTRACE_TEAM)";
+				ENABLE_APP_INTENTS_METADATA_GENERATION = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Configuration/Extension-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(AUDIOTRACE_BUNDLE_ID).Broadcast";
+				PRODUCT_NAME = AudioTraceBroadcast;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D063854EB820E3E701034B83 /* SharedDebug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 5.0;
+			};
+			name = SharedDebug;
+		};
+		DFF34D48C0AEC1CD611F6606 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		E5F7CB399BDA40FFA7E224DD /* SharedDebug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1EA97CF509B29FF20C40AFA7 /* Configuration/Identifiers.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				AUDIOTRACE_SHARED_CAPTURE = YES;
+				CODE_SIGN_ENTITLEMENTS = Configuration/Shared.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = "$(AUDIOTRACE_TEAM)";
+				ENABLE_APP_INTENTS_METADATA_GENERATION = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Configuration/App-Info.plist";
+				"INFOPLIST_FILE[sdk=iphoneos27*]" = "Configuration/Native-Info.plist";
+				"INFOPLIST_FILE[sdk=iphoneos28*]" = "Configuration/Native-Info.plist";
+				"INFOPLIST_FILE[sdk=iphoneos29*]" = "Configuration/Native-Info.plist";
+				"INFOPLIST_FILE[sdk=iphonesimulator27*]" = "Configuration/Native-Info.plist";
+				"INFOPLIST_FILE[sdk=iphonesimulator28*]" = "Configuration/Native-Info.plist";
+				"INFOPLIST_FILE[sdk=iphonesimulator29*]" = "Configuration/Native-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(AUDIOTRACE_BUNDLE_ID)";
+				PRODUCT_NAME = AudioTrace;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = SharedDebug;
+		};
+		E9C116C8D89BAF28BDEDCC46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1EA97CF509B29FF20C40AFA7 /* Configuration/Identifiers.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				AUDIOTRACE_SHARED_CAPTURE = NO;
+				CODE_SIGN_ENTITLEMENTS = Configuration/Personal.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = "$(AUDIOTRACE_TEAM)";
+				ENABLE_APP_INTENTS_METADATA_GENERATION = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Configuration/Extension-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(AUDIOTRACE_BUNDLE_ID).Broadcast";
+				PRODUCT_NAME = AudioTraceBroadcast;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4BFD9FB0C1AF70F2030A6F98 /* Build configuration list for PBXNativeTarget "AudioTrace" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				383E6D4FB63B2E13F9906147 /* Debug */,
+				6A522292BDC8D2848215C5E6 /* Release */,
+				E5F7CB399BDA40FFA7E224DD /* SharedDebug */,
+				6661CDF525A07D20FFF3098E /* SharedRelease */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		9CCCFC6BB1C66D1DE47B57A7 /* Build configuration list for PBXNativeTarget "AudioTraceBroadcast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9C116C8D89BAF28BDEDCC46 /* Debug */,
+				C6AF114F756F1F7A228BA4D4 /* Release */,
+				776085161C81300BCE6BF557 /* SharedDebug */,
+				1256EFF8AE77A6E68DBABFED /* SharedRelease */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		DEB0744DC7708188060CB52C /* Build configuration list for PBXProject "AudioTrace" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03FD7327F9CF605CEA3318F8 /* Debug */,
+				DFF34D48C0AEC1CD611F6606 /* Release */,
+				D063854EB820E3E701034B83 /* SharedDebug */,
+				78B108A7C696D9CBD1A8A598 /* SharedRelease */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 98F54143AB4E86B28C3AFEE0 /* Project object */;
+}
