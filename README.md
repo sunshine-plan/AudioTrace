@@ -102,6 +102,17 @@ zsh Scripts/test_capture_flow.sh '/path/to/compatible-session.zip'
 - `Configuration/`：Info、entitlement、隐私声明与标识符配置。
 - `Tests/`、`Scripts/`：本地验证与项目生成工具。
 
+## 参与协作
+
+任何人都可以查看、下载或 Fork 本项目，在自己的副本里修改代码；这些操作不会改变本仓库，也不会访问维护者的本机文件。
+
+1. 遇到问题或有建议，提交 [Issue](https://github.com/sunshine-plan/AudioTrace/issues)。请检查并移除私人录屏、音频和设备标识。
+2. 想改进代码，先 Fork 到自己的账号，在自己的分支上修改和测试。
+3. 向本仓库提交 [Pull Request](https://github.com/sunshine-plan/AudioTrace/pulls)，说明改动和验证结果。
+4. 由维护者审阅并决定是否合并；提交 PR 本身不会覆盖原仓库源码。本仓库没有向公众授予直接写入权限。
+
+公开查看和下载没有七天期限。维护者使用的短期上传凭据与开源访问权限相互独立。
+
 ## 许可证
 
 [MIT](LICENSE)。欢迎反馈问题和提交改进。
